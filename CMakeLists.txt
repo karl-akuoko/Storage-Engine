@@ -6,7 +6,10 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-add_executable(storage_engine src/main.cpp)
+add_executable(storage_engine 
+    src/main.cpp
+    src/storage_engine.cpp
+)
 
 target_include_directories(storage_engine PRIVATE include)
 
